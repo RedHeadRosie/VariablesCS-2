@@ -10,12 +10,12 @@ namespace VariablesCS
             //Practicing Creating Variables
             int numberOfCupsOfCoffee = 5;
             string fullName = "Philippa Matthews";
-            var today = "03/07/2023";
-            Console.WriteLine($"My 3 Variables are {numberOfCupsOfCoffee}, {fullName} and {today}.");
+            var rightNow = DateTime.Now;
+            Console.WriteLine($"{fullName} drinks {numberOfCupsOfCoffee} cups of coffee on {rightNow}.");
 
 
             //Practicing getting input from the user
-            Console.WriteLine("Please enter your name: ");
+            Console.Write("Please enter your name: ");
             string userName = Console.ReadLine();
             Console.WriteLine($"Hello {userName}, welcome to my world.");
 
@@ -38,12 +38,9 @@ namespace VariablesCS
             var product = firstOperand * secondOperand;
             var quotient = firstOperand / secondOperand;
             var remainder = firstOperand % secondOperand;
-
-
-
-
-
-
+            Console.WriteLine($"If you add {firstOperand} and {secondOperand}, you get {sum}. If you subtract them, you get {difference}");
+            Console.WriteLine($"If you multiply {firstOperand} and {secondOperand}, you get {product} and if you divide them, you get {quotient}");
+            Console.WriteLine($"when you divide {firstOperand} by {secondOperand}, the remainder is {remainder}");
 
         }
     }
