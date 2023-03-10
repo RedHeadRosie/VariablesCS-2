@@ -6,7 +6,7 @@ namespace VariablesCS
     {
         static void Main(string[] args)
         {
-            //Explorer Mode
+
             //Practicing Creating Variables
             int numberOfCupsOfCoffee = 5;
             string fullName = "Philippa Matthews";
@@ -17,7 +17,11 @@ namespace VariablesCS
             //Practicing getting input from the user
             Console.Write("Please enter your name: ");
             string userName = Console.ReadLine();
-            Console.WriteLine($"Hello {userName}, welcome to my world.");
+            if (userName == "Alice")
+            {
+                Console.WriteLine($"Hello {userName}, don't fall down the rabbit hole.");
+            }
+            else { Console.WriteLine($"Hello {userName}, welcome to my world."); }
 
 
             //Practicing getting different types of input from the user
@@ -41,6 +45,8 @@ namespace VariablesCS
             Console.WriteLine($"If you add {firstOperand} and {secondOperand}, you get {sum}. If you subtract them, you get {difference}");
             Console.WriteLine($"If you multiply {firstOperand} and {secondOperand}, you get {product} and if you divide them, you get {quotient}");
             Console.WriteLine($"when you divide {firstOperand} by {secondOperand}, the remainder is {remainder}");
+
+
 
         }
     }
